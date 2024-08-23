@@ -1,0 +1,54 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    padding:2px;
+ 
+
+}
+
+
+.image-for-mentor{
+  
+    border-radius: 23px;
+    box-shadow:3px 4px 16px 0px #bfbfbf;
+    width:clamp(200px, 40vw, 400px);
+    height:clamp(70px, 40vw, 300px);
+}
+
+.heading-for-home{
+    font-family: "Roboto";
+    background:linear-gradient(to right, #1e293b, #c9bc6a);
+    background-clip: text;
+    color:transparent;
+    font-size:44px;
+    
+}
+
+.description-for-home{
+    
+    background:linear-gradient(to right, #a3e008, #03243f);
+    background-clip: text;
+    color:transparent;
+    font-size: 19px;
+}
+
+.button-for-book{
+    background-color: #1e293b;
+    color: #ffffff;
+    border-radius: 12px;
+    border-width: 0px;
+    padding: 12px;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-for-book:hover{
+    background-color: #118d96;
+}

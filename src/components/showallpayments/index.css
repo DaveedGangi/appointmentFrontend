@@ -1,0 +1,29 @@
+
+
+.payments-container{
+    margin: 12px;
+    box-sizing: border-box;
+}
+
+.navbar-for-payments{
+    background-color:#d1cce1;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.each-payment{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #2c9758;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin: 12px;
+}

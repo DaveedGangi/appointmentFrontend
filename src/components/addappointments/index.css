@@ -1,0 +1,72 @@
+
+
+.appointment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  
+  padding:12px;
+}
+
+.navbar-for-add-appointments{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #d1cce1;
+    padding: 12px;
+    border-radius: 12px;
+    font-size:14px;
+    align-items: center;
+    margin:12px;
+    box-sizing: border-box;
+}
+
+.add-appointment-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
+    width:clamp(300px, 100%, 400px);
+
+}
+
+.student-id,.mentor-id,.date,.time,.duration,.add-amount{
+
+    width:clamp(200px, 100%, 390px);
+    height:33px;
+}
+
+.add-appointment-button{
+    background-color: #3380fa;
+    color: #ffffff;
+    border-radius: 12px;
+    border-width: 0px;
+    padding: 12px;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    height:44px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.add-appointment-button:hover{
+    background-color: #769ddb;
+    color: #ffffff;
+    border-radius: 12px;
+}

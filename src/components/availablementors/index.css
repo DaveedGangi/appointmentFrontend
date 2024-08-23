@@ -1,0 +1,68 @@
+.available-mentors-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    border-radius: 12px;
+    flex-wrap: wrap;
+
+}
+
+.each-mentor-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background-color: #258a8a;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-size:9px;
+    margin:12px;
+    
+}
+
+.mentors-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    border-radius: 12px;
+    flex-wrap: wrap;
+
+}
+
+.delete-all-mentors-button{
+    background-color: #3380fa;
+    color: #ffffff;
+    border-radius: 12px;
+    border-width: 0px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    font-family: "Roboto";
+
+
+}
+
+.navbar-for-available-mentors{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #d1cce1;
+    box-sizing: border-box;
+    border-radius: 12px;
+    flex-wrap: wrap;
+    width:100%;
+    font-size:14px;
+}

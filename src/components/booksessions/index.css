@@ -1,0 +1,46 @@
+
+
+.book-sessions-container{
+    background-image:linear-gradient(to right, #1e293b, #c9bc6a);
+    background-clip: text;
+    color:transparent;
+    font-size:44px;
+
+}
+
+.button{
+    background-color: #709e65;
+    color: #ffffff;
+    border-radius: 12px;
+    border-width: 0px;
+    padding: 12px;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    margin:12px;
+}
+.button:hover{
+    background-color: #769ddb;
+    color: #ffffff;
+    border-radius: 12px;
+}
+.button-home{
+    background-color: #6c4203;
+    color: #ffffff;
+    border-radius: 12px;
+    border-width: 0px;
+    padding: 12px;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    margin:12px;
+}
+.button-home:hover{
+    background-color: #110c06;
+    color: #ffffff;
+    border-radius: 12px;
+}

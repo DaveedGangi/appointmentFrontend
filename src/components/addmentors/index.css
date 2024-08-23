@@ -1,0 +1,72 @@
+.add-mentors-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:13px;
+    
+}
+
+
+.form-mentor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
+
+    
+}
+.add-mentor-button,.expertise-add{
+    background-color: #3380fa;
+    color: #ffffff;
+    border-radius: 12px;
+    border-width: 0px;
+    padding: 12px;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    height:44px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-mentor-button:hover {
+    background-color: #769ddb;
+    color: #ffffff;
+    border-radius: 12px;
+    }
+
+.premium{
+    width:clamp(210px, 40vw, 410px);
+    height:35px;
+}
+.mentor-name,.expertise-mentor{
+    width:clamp(200px, 40vw, 400px);
+    height:33px;
+}
+
+.navbar-for-add-mentors{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #d1cce1;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom:12px;
+    align-items: center;
+    font-size:14px;
+     
+}
