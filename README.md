@@ -1,5 +1,144 @@
 
 
+### if you want to run my code on your local system you can use the following command
+
+you need to install Visual Studio 
+
+on terminal you can use the following command
+
+git clone https://github.com/DaveedGangi/appointmentFrontend.git 
+
+cd appointment  
+
+npm i install // nessasary packages installed on your machine
+
+npm start  
+
+### How to use this application 
+
+initially you will navigate to the home page 
+
+there is button book session on cliking on that you will navigate to the book sessions page 
+
+and there are several buttons available , that will help you book sessions 
+
+initally you will need to add the mentor by clicking on add mentor button 
+
+once mentor is added you will add students by clicking on add students button 
+
+once you are added students and mentors to their respected fileds 
+
+then you will need to fill the book appoint by clicking on book appointment button 
+
+this application will help you to know the number fo appointments and number of payments 
+
+you can use this application in different screens 
+
+### my backend url 
+
+i have deployed the backend on render platform 
+
+repository: https://github.com/DaveedGangi/appointmentsBackend.git
+
+url : https://appointmentsbackend.onrender.com 
+
+### backend code explanation  
+
+
+### 1. **Basic Setup**
+   - **Modules Imported**:
+     - `express`: A web framework for Node.js used to create the server and manage routes.
+     - `sqlite3`: A library for interacting with SQLite databases.
+     - `bodyParser`: Middleware for parsing incoming request bodies in JSON format.
+     - `path`: A core Node.js module for handling and transforming file paths.
+     - `cors`: A middleware that allows Cross-Origin Resource Sharing, enabling the server to accept requests from different origins.
+
+   - **App Initialization**:
+     - The `app` variable is created using `express()`.
+     - `cors()` and `bodyParser.json()` are used as middleware to handle CORS and JSON request bodies, respectively.
+
+### 2. **Database Connection and Initialization**
+   - **Connecting to SQLite**:
+     - The `sessions.db` file is used to store the database. A connection is established using `sqlite3.Database`.
+     - If the connection is successful, a message is logged.
+
+   - **Tables Setup**:
+     - **Mentors Table**: Stores mentors with fields for `name`, `expertise` (as a JSON string), and `premium` status.
+     - **Appointments Table**: Stores appointments, linking a mentor to a student, with fields for `date`, `start_time`, `end_time`, and `duration`.
+     - **Students Table**: Stores students with a `name` and `area_of_interest`.
+     - **Payments Table**: Stores payment information related to appointments.
+
+### 3. **Helper Functions**
+   - **`checkAvailability`**:
+     - Checks if a mentor is available at a specific time on a given date. It queries the `Appointments` table to see if any existing appointments overlap with the requested time slot.
+  
+   - **`updateMentorAvailability`**:
+     - A placeholder function that logs a mentor's updated availability after booking an appointment. This can be extended to update actual availability data if needed.
+
+### 4. **API Routes**
+   - **Booking an Appointment with Payment** (`/book-appointment`):
+     - The request body should include `student_id`, `mentor_id`, `date`, `start_time`, `duration`, and `amount`.
+     - The server first checks if the mentor has the expertise matching the student's area of interest.
+     - It then checks if the mentor is available at the requested time.
+     - If available, the appointment is booked, and the payment is recorded.
+     - The mentor's availability is updated.
+
+   - **Add Mentor** (`/add-mentor`):
+     - Adds a new mentor to the `Mentors` table. The expertise is stored as a JSON string.
+
+   - **Add Student** (`/add-student`):
+     - Adds a new student to the `Students` table.
+
+   - **Get All Appointments** (`/appointments`):
+     - Retrieves and returns all rows from the `Appointments` table.
+
+   - **Get All Payments** (`/payments`):
+     - Retrieves and returns all rows from the `Payments` table.
+
+   - **Get All Mentors** (`/mentors`):
+     - Retrieves and returns all rows from the `Mentors` table.
+
+   - **Get All Students** (`/students`):
+     - Retrieves and returns all rows from the `Students` table.
+
+   - **Delete All Students** (`/students`):
+     - Deletes all entries in the `Students` table.
+
+   - **Delete All Mentors** (`/mentors`):
+     - Deletes all entries in the `Mentors` table.
+
+   - **Delete All Appointments** (`/appointments`):
+     - Deletes all entries in the `Appointments` table.
+
+   - **Delete All Payments** (`/payments`):
+     - Deletes all entries in the `Payments` table.
+
+   - **Delete a Specific Mentor** (`/mentors/:id`):
+     - Deletes a specific mentor by their ID.
+
+   - **Delete a Specific Student** (`/students/:id`):
+     - Deletes a specific student by their ID.
+
+### 5. **Server Startup**
+   - The server is started on port `3000` or an environment-defined port. A message logs the port on which the server is running.
+
+### 6. **Test HTTP Requests**
+   - The `index.http` file contains example HTTP requests to test the various routes:
+     - Adding mentors and students.
+     - Booking an appointment.
+     - Fetching, deleting mentors, students, appointments, and payments.
+
+### Summary
+This server is designed to manage a scheduling system where students can book appointments with mentors based on their expertise and availability. The system also supports payments for these appointments. Various endpoints are provided to manage mentors, students, appointments, and payments.
+
+
+
+
+
+
+
+
+
 
 
 
